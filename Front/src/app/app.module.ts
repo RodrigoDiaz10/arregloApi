@@ -37,6 +37,7 @@ import { TruncateTextPipe } from './pipes/truncate-text.pipe';
 // Externals
 import { NgxSpinnerModule } from 'ngx-spinner'; 
 import { NgxPaginationModule } from 'ngx-pagination';
+import { QualificationService } from './services/qualification.service';
 
 
 @NgModule({
@@ -75,7 +76,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
     NgxSpinnerModule, 
     NgxPaginationModule
   ],
-  providers: [DataApiService],
+  providers: [DataApiService,QualificationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
